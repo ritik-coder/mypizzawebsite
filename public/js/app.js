@@ -27079,8 +27079,8 @@ socket.on('orderUpdated', function (data) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Computer Empires\Complete web development\Pizza\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Computer Empires\Complete web development\Pizza\resources\scss\app.scss */"./resources/scss/app.scss");
+__webpack_require__(/*! G:\Pizza\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! G:\Pizza\resources\scss\app.scss */"./resources/scss/app.scss");
 
 
 /***/ })

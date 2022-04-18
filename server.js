@@ -14,7 +14,7 @@ const Emitter=require('events')
 
 const Mongodb= require('connect-mongo')(session) //basicially to store the cokkies  in the mongo db we use the connect-mongo
 // define the port on for server
-PORT=process.env.PORT || 3300
+const PORT=process.env.PORT || 8000
 
 
 //use for the knowledge of server to tells about the file index
@@ -31,10 +31,10 @@ app.set('view engine','ejs')
 //database connection
 const url = 'mongodb://localhost/pizza';
 mongoose.connect(url, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify : true  });
-connection=mongoose.connection;
+const connection=mongoose.connection;
 connection.once('open', ()=>{
     console.log('database connected');
-}).catch( err=>{
+}).catch( ()=>{
     console.log('connection failed')
 });
 
